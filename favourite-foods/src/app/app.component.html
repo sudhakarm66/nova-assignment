@@ -1,0 +1,10 @@
+<header>
+  <h2>Best Food App</h2>
+</header>
+<ng-container *ngIf="!isLoading">
+  <app-favourites></app-favourites>
+  <app-menu></app-menu>
+</ng-container>
+<ng-container *ngIf="isLoading">
+  <!-- Place a loader image to show data loading -->
+</ng-container>

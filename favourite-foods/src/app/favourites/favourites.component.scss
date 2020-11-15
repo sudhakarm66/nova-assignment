@@ -1,0 +1,58 @@
+.favourites {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+
+    >div {
+        padding: 0 .5em;
+        margin: .5em;
+    }
+
+    .text {
+        p {
+            color: rgb(0, 0, 0, .5);
+        }
+        * {
+            margin: .25em;
+        }
+    }
+}
+
+.items {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+    margin: 1em;
+
+    .fav-item {
+        min-width: 250px;
+        max-width: 250px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .item {
+        display: flex;
+        flex: 0 0 45%;
+        justify-content: space-around;
+
+        .item-info >span{
+            display: block;
+        }
+
+        div, button {
+            margin: .5em;
+        }
+
+        button {
+            align-self: center;
+            padding: .5em;
+            background: #0db95a;
+            border: 0px;
+            border-radius: .25em;
+            color: white;
+        }
+    }
+}

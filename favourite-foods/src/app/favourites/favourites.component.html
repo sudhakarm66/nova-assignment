@@ -1,0 +1,24 @@
+<section>
+    <div class="favourites">
+        <div class="text">
+            <h3>Favourites</h3>
+            <p>Enjoy what you have been ordering</p>
+        </div>
+        <div>
+            <img src="" alt="Shopping bag" width="50" height="50">
+        </div>
+    </div>
+
+    <div class="items">
+        <div class="fav-item" *ngFor="let item of favourites">
+            <img [src]="item.image" width="250">
+            <div class="item">
+                <div class="item-info">
+                    <span>{{item.name}}</span>
+                    <span><span>&#x20B9;</span>{{item.price}}</span>
+                </div>
+                <button>REORDER</button>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,1 +1,26 @@
-<p>menu works!</p>
+<section>
+    <input type="text" name="search" id="search-item" placeholder="Search for a particular dish or ingredient">
+    <div class="cateogry-filter">
+        <h3>Select Categories</h3>
+        <span class="filter">Filter</span>
+    </div>
+    <div class="categories">
+        <div class="category" *ngFor="let category of categories">
+            <img [src]="category.image" alt="category.name">
+            <span>{{category.name}}</span>
+        </div>
+    </div>
+
+    <div class="recipes">
+        <div class="recipe" *ngFor="let recipe of recipes">
+            <img [src]="recipe.image" alt="recipe.name">
+            <div class="item">
+                <div class="item-info">
+                    <span>{{recipe.name}}</span>
+                    <span><span>&#x20B9;</span>{{recipe.price}}</span>
+                </div>
+                <button>ADD TO BAG</button>
+            </div>
+        </div>
+    </div>
+</section>

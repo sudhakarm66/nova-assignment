@@ -3,3 +3,17 @@ body {
     margin: 0;
     background: rgb(224 224 224 / 43%);
 }
+
+hr {
+    margin: 1em;
+    border-color: rgb(0 0 0 / 10%);
+}
+
+button {
+    align-self: center;
+    padding: .5em;
+    background: #0db95a;
+    border: 0px;
+    border-radius: .25em;
+    color: white;
+}
